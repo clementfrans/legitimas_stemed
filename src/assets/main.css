@@ -1,35 +1,42 @@
-@import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@font-face {
+  font-family: "Harmattan";
+  src: url("@/assets/fonts/Harmattan-Regular.woff") format("woff");
   font-weight: normal;
+  font-style: normal;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+@font-face {
+  font-family: "Harmattan";
+  src: url("@/assets/fonts/Harmattan-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+@font-face {
+  font-family: "Harmattan";
+  src: url("@/assets/fonts/Harmattan-Medium.woff") format("woff");
+  font-weight: medium;
+  font-style: normal;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+@font-face {
+  font-family: "Harmattan";
+  src: url("@/assets/fonts/Harmattan-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+@font-face {
+  font-family: "Norwester";
+  src: url("@/assets/fonts/norwester.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Harmattan", sans-serif;
 }
