@@ -39,7 +39,11 @@ onMounted(() => {
     <div v-else>
       <NavBar />
       <div class="hero-section h-[calc(100vh_-_100px)] flex justify-center">
-        <img src="../../heroImage.png" alt="Hero Image" class="max-h-full" />
+        <img
+          src="@/assets/images/heroImage.png"
+          alt="Hero Image"
+          class="max-h-full"
+        />
       </div>
       <Hero2 />
       <Map />

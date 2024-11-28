@@ -26,7 +26,7 @@ h1 {
 }
 
 .hero-2 {
-  background: url("./hero2bg.png");
+  background: url("@/assets/images/hero2bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;

@@ -41,7 +41,11 @@ onUnmounted(() => {
   >
     <div class="w-[1280px] h-[100px] flex items-center p-4 justify-between">
       <div>
-        <img src="../../siteLogo.png" alt="Site Logo" class="h-[70px] pt-2" />
+        <img
+          src="@/assets/images/siteLogo.png"
+          alt="Site Logo"
+          class="h-[70px] pt-2"
+        />
       </div>
       <div>
         <ul class="flex gap-10 font-bold text-xl">
