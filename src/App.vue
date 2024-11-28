@@ -47,7 +47,11 @@ onMounted(() => {
       </div>
       <Hero2 />
       <Map />
-      <div class="bg-blue-400 h-[500vh]"></div>
+      <div class="bg-blue-400 h-[500vh]">
+        <h1 class="text-3xl text-center p-5">
+          Sections Below this Element are Under Construction
+        </h1>
+      </div>
     </div>
   </transition>
 </template>
