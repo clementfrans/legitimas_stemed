@@ -4,6 +4,7 @@ import Loader from "@/components/Loader.vue";
 import NavBar from "@/components/NavBar.vue";
 import Map from "@/components/Map.vue";
 import Hero2 from "./components/Hero2.vue";
+import Services from "@/components/Services.vue";
 
 // Manage loader visibility state
 const showLoader = ref(false);
@@ -47,6 +48,7 @@ onMounted(() => {
       </div>
       <Hero2 />
       <Map />
+      <Services />
       <div class="bg-blue-400 h-[500vh]">
         <h1 class="text-3xl text-center p-5">
           Sections Below this Element are Under Construction
