@@ -33,56 +33,72 @@ onMounted(() => {
       of solutions to enhance healthcare efficiency and optimize patient care.
     </p>
     <div class="card lg:card-side bg-[#73adfb] shadow-xl text-black mt-4">
-      <figure class="w-[50%]">
+      <!-- <figure class="w-[50%]">
         <img :src="`/services1.png`" alt="Album" />
-      </figure>
+      </figure> -->
       <div class="card-body">
         <h2 class="card-title">Fill up the form to book an appointment:</h2>
-        <label class="input input-bordered flex items-center gap-2 bg-slate-50">
-          Full Name
-          <input
-            type="text"
-            class="grow bg-slate-50"
-            placeholder="Juan Dela Cruz"
-          />
-        </label>
-        <label class="input input-bordered flex items-center gap-2 bg-slate-50">
-          Address:
-          <input
-            type="text"
-            class="grow bg-slate-50"
-            placeholder="123, Bayang Sinilangan St., Pinas City"
-          />
-        </label>
-        <label class="input input-bordered flex items-center gap-2 bg-slate-50">
-          Age:
-          <input type="text" class="grow bg-slate-50" placeholder="25" />
-        </label>
-        <label class="input input-bordered flex items-center gap-2 bg-slate-50">
-          Phone No.
-          <input
-            type="text"
-            class="grow bg-slate-50"
-            placeholder="0998 765 4321"
-          />
-        </label>
-        <label class="label">
-          <span class="label-text text-black text-lg">Select Date</span>
-        </label>
-        <input
-          type="date"
-          class="input input-bordered w-full max-w-xs bg-slate-50"
-        />
-        <label class="label">
-          <span class="label-text text-black text-lg">Select Time</span>
-        </label>
-        <input
-          type="time"
-          class="input input-bordered w-full max-w-xs bg-slate-50 text-black"
-        />
+        <div class="flex flex-row gap-10">
+          <div class="w-1/2 gap-4 flex flex-col">
+            <label
+              class="input input-bordered flex items-center gap-2 bg-slate-50"
+            >
+              Full Name
+              <input
+                type="text"
+                class="grow bg-slate-50"
+                placeholder="Juan Dela Cruz"
+              />
+            </label>
+            <label
+              class="input input-bordered flex items-center gap-2 bg-slate-50"
+            >
+              Address:
+              <input
+                type="text"
+                class="grow bg-slate-50"
+                placeholder="123, Bayang Sinilangan St., Pinas City"
+              />
+            </label>
+            <label
+              class="input input-bordered flex items-center gap-2 bg-slate-50"
+            >
+              Age:
+              <input type="text" class="grow bg-slate-50" placeholder="25" />
+            </label>
+            <label
+              class="input input-bordered flex items-center gap-2 bg-slate-50"
+            >
+              Phone No.
+              <input
+                type="text"
+                class="grow bg-slate-50"
+                placeholder="0998 765 4321"
+              />
+            </label>
+          </div>
+          <div class="w-1/2 gap-4 flex flex-col">
+            <label class="label">
+              <span class="label-text text-black text-lg">Select Date</span>
+            </label>
+            <input
+              type="date"
+              class="input input-bordered w-full max-w-xs bg-slate-50"
+            />
+            <label class="label">
+              <span class="label-text text-black text-lg">Select Time</span>
+            </label>
+            <input
+              type="time"
+              class="input input-bordered w-full max-w-xs bg-slate-50 text-black"
+            />
 
-        <div class="card-actions justify-end">
-          <button class="btn btn-primary bg-blue-950 text-white">Submit</button>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary bg-blue-950 text-white">
+                Submit
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
