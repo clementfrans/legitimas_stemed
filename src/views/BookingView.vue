@@ -82,9 +82,7 @@ onMounted(() => {
         />
 
         <div class="card-actions justify-end">
-          <button class="btn btn-primary bg-blue-950 text-white">
-            Submit Appointment
-          </button>
+          <button class="btn btn-primary bg-blue-950 text-white">Submit</button>
         </div>
       </div>
     </div>
