@@ -39,4 +39,9 @@
 
 body {
   font-family: "Harmattan", sans-serif;
+  background-color: white !important;
+}
+
+h1 {
+  @apply text-6xl font-bold  text-black;
 }

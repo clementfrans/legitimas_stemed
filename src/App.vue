@@ -1,25 +1,5 @@
 <script setup>
-import { ref, onMounted } from "vue";
-
-// Manage loader visibility state
-const showLoader = ref(false);
-onMounted(() => {
-  const today = new Date().toISOString().split("T")[0]; // Get current date (YYYY-MM-DD)
-
-  // Check localStorage for the last visit date
-  const lastVisit = localStorage.getItem("lastVisit");
-
-  if (lastVisit !== today) {
-    // First visit of the day
-    showLoader.value = true;
-    localStorage.setItem("lastVisit", today);
-
-    // Hide loader after 3 seconds
-    setTimeout(() => {
-      showLoader.value = false;
-    }, 3000);
-  }
-});
+import NavBar from "@/components/NavBar.vue";
 </script>
 
 <template>
@@ -29,9 +9,8 @@ onMounted(() => {
     Website is a Work in Progress. This Element will be removed upon 100%
     completion
   </div>
-  <transition name="fade">
-    <RouterView />
-  </transition>
+  <NavBar />
+  <RouterView />
 </template>
 
 <style scoped>

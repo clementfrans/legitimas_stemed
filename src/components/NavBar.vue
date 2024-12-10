@@ -41,16 +41,19 @@ onUnmounted(() => {
   >
     <div class="w-[1280px] h-[100px] flex items-center p-4 justify-between">
       <div>
-        <img
-          src="@/assets/images/siteLogo.png"
-          alt="Site Logo"
-          class="h-[70px] pt-2"
-        />
+        <RouterLink to="/"
+          ><img
+            src="@/assets/images/siteLogo.png"
+            alt="Site Logo"
+            class="h-[70px] pt-2"
+        /></RouterLink>
       </div>
       <div>
         <ul class="flex gap-10 font-bold text-xl">
           <li><a href="/about">About</a></li>
-          <li><a href="/about">Schedule</a></li>
+          <li>
+            <RouterLink to="/booking">Schedule</RouterLink>
+          </li>
           <li><a href="/services">Services</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
